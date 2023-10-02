@@ -4,7 +4,7 @@
 }
 body {
 
-    background-color: blueviolet;
+    background-color: rgb(43, 12, 182);
 }
 
 #banner {
@@ -24,5 +24,5 @@ h1 {
     margin: auto;
     font-size: 30px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(211, 0, 0);
 }
