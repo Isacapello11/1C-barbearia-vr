@@ -19,6 +19,7 @@ h1 {
 }
 
 .textos {
+    width: 90%;
     font-size: 30px;
     text-align: center;
     color: blueviolet;
