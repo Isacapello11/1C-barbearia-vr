@@ -19,7 +19,8 @@ h1 {
 }
 
 .textos {
-    width: 90%;
+    width: 80%;
+    align-content: center;
     margin: auto;
     font-size: 30px;
     text-align: center;
