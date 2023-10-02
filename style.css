@@ -17,3 +17,9 @@ h1 {
     text-align: center;
     text-transform: uppercase;
 }
+
+.textos {
+    font-size: 30px;
+    text-align: center;
+    color: blueviolet;
+}
