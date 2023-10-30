@@ -1,0 +1,381 @@
+{
+    margin: 0;
+    padding: 0;
+}
+body {
+
+    background: #ff4b1f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1fddff, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1fddff, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+  
+ #logo{
+    width: 5%;
+    height: 5%;
+ }
+
+ .conteiner-pai {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ nav li {
+    display: inline;
+    padding: 20px;
+ }
+
+ nav a {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+ }
+
+ nav a:hover {
+    text-decoration: underline;
+    color: #f1f518;
+ }
+
+.title-form h1 {
+
+    font-size: 1.7em;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    width: 280px;
+    color: #fff;
+    text-align: left;
+    margin: auto;
+    padding-bottom: 13px;
+  
+  
+  }
+  .title-form h1:before {
+  
+    background-color: #ff0083;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 60%;
+    margin-bottom: 5px;
+  
+  }
+  
+  .title-form h1:after {
+  
+    background-color: #ff0083;
+    content: '';
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 20px;
+    margin-top: 5px;
+  
+  }
+  
+  .box-formulario {
+  
+      width: 100%;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #312d2d;
+      padding:60px 0;
+  
+  }
+  
+  .formulario {
+  
+      width: 700px;
+      background: #312d2d;
+      padding: 60px 5%;
+      text-align: center;
+  
+  }
+  
+  
+  .formulario span {
+    position: relative;
+    display: flex;
+    margin: 45px 10px;
+  
+  }
+  
+  /*input Animado*/
+  
+  .input {
+  
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0 13px 58px;
+    font-family: "Open Sans", sans;
+    font-weight: 400;
+    color: #312d2d;
+    background: #ffffff;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    transition: all .3s ease-in-out;
+  
+  }
+  
+  .input::-webkit-input-placeholder {
+  
+    color: #312d2d;
+    font-weight: 300;
+  
+  }
+  .input + label {
+    
+    display: inline-block;
+    position: absolute;
+    transform: translateX(0);
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+    transition: all .3s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    overflow: hidden;
+    color: #fff;
+  
+  }
+  .input + label:before, .input + label:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+  .input + label:before {
+    top: 6px;
+    left: 5px;
+    right: 5px;
+    bottom: 6px;
+    background: #FF0083;
+  }
+  .input + label:after {
+    top: 0;
+    bottom: 0;
+    background: #FF0083;
+  }
+  
+  .input:focus,
+  .input:active {
+    
+    color: #FF0083;
+    padding: 10px 0 13px 10px;
+    background: #fff;
+  
+  }
+  
+  .input:focus::-webkit-input-placeholder,
+  .input:active::-webkit-input-placeholder {
+    color: #312d2d;
+  }
+  .input:focus + label,
+  .input:active + label {
+    
+    transform: translateY(-100%);
+    padding: 10px 15px;
+  
+  }
+  .input:focus + label:before,
+  .input:active + label:before {
+    border-radius: 5px;
+  }
+  .input:focus + label:after,
+  .input:active + label:after {
+    transform: translateY(100%);
+  }
+  
+  
+  /*TextArea*/
+  .textarea {
+  
+    display: inline-block;
+    width: 100%;
+    height: 87px;
+    padding: 10px 0 13px 58px;
+    font-family: "Open Sans", sans;
+    font-weight: 400;
+    color: #312d2d;
+    background: #efefef;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    transition: all .3s ease-in-out;
+  
+  }
+  
+  .textarea::-webkit-input-placeholder {
+  
+    color: #312d2d;
+    font-weight: 300;
+  
+  }
+  .textarea + label {
+    
+    display: inline-block;
+    position: absolute;
+    transform: translateX(0);
+    top: 0;
+    left: 0;
+    padding: 33px 15px;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+    transition: all .3s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    overflow: hidden;
+    color: #fff;
+  
+  }
+  .textarea + label:before, .textarea + label:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+  .textarea + label:before {
+    top: 6px;
+    left: 5px;
+    right: 5px;
+    bottom: 6px;
+    background: #FF0083;
+  }
+  .textarea + label:after {
+    top: 0;
+    bottom: 0;
+    background: #FF0083;
+  }
+  
+  .textarea:focus,
+  .textarea:active {
+    color: #FF0083;
+    padding: 10px 0 13px 10px;
+    background: #fff;
+  }
+  .textarea:focus::-webkit-input-placeholder,
+  .textarea:active::-webkit-input-placeholder {
+    color: #312d2d;
+  }
+  .textarea:focus + label,
+  .textarea:active + label {
+    
+    transform: translateY(-100%);
+    padding: 10px 15px;
+  
+  }
+  
+  .textarea:focus + label:before,
+  .textarea:active + label:before {
+    border-radius: 5px;
+  }
+  .textarea:focus + label:after,
+  .textarea:active + label:after {
+    transform: translateY(100%);
+  }
+  
+  /*Botão*/
+  .box-pulse { 
+      width:100%; 
+      width:250px; 
+      margin:0 auto; padding:0 30px;
+  }
+  .box-pulse {
+    
+  
+    text-decoration:none;
+    display: inline-block;
+    font-family:Verdana, Geneva, sans-serif;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  
+  }
+  .botao-pulse {
+    
+    border: none;
+    cursor: pointer;
+    padding: 0.8em 2.2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff0083;
+    border-radius:3px; 
+    -webkit-animation: pulse 1s ease infinite;
+    -moz-animation: pulse 1s ease infinite;
+    -ms-animation: pulse 1s ease infinite;
+    -o-animation: pulse 1s ease infinite;
+    animation: pulse 1s ease infinite;
+  }
+  .botao-pulse:hover {
+    color: #fff;
+  }
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    25% {
+      -webkit-transform: scale(1.1);
+    }
+    50% {
+      -webkit-transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+  @-moz-keyframes pulse {
+    0% {
+      -moz-transform: scale(1);
+    }
+    25% {
+      -moz-transform: scale(1.1);
+    }
+    50% {
+      -moz-transform: scale(1);
+    }
+    100% {
+      -moz-transform: scale(1);
+    }
+  }
+  @-ms-keyframes pulse {
+    0% {
+      -ms-transform: scale(1);
+    }
+    25% {
+      -ms-transform: scale(1.1);
+    }
+    50% {
+      -ms-transform: scale(1);
+    }
+    100% {
+      -ms-transform: scale(1);
+    }
+  }
+  @-o-keyframes pulse {
+    
+    0% { -o-transform: scale(1); }
+    25% { -o-transform: scale(1.1); }
+    50% { -o-transform: scale(1); }
+    100% { -o-transform: scale(1); } 
+  }
+  @keyframes pulse { 
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }

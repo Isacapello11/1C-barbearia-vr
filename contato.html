@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.css">
+    <title>Barbearia Alura</title>
+</head>
+<body>
+ <header class="conteiner-pai">
+  <img id="logo" src="https://1nem.vercel.app/img/logo_bco.png" alt="logo">
+  <nav>
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="produtos.html">produtos</a></li>
+      <li><a href="serviços.html">serviços</a></li>
+      <li><a href="contatos.html">contatos</a></li>
+    </ul>
+  </nav>
+ </header>
+
+ <div class="box-formulario">        
+        
+    <div class="formulario">
+        
+        <div class="title-form">
+          <h1>Contato</h1>
+        </div>
+
+        <form action="#" method="post">
+                 
+
+            <span>
+                <input type="text" class="input" id="nome" name="nome" placeholder="Nome" autocomplete="off" required=""/>
+                <label for="nome"> <i class="icon icon-user-1"></i> </label>
+            </span>
+
+            <span>
+                <input type="text" class="input" id="email" name="email" placeholder="E-mail" autocomplete="off" required=""/>
+                <label for="email"> <i class="icon icon-mail-1"></i> </label>
+            </span>
+
+            <span>
+                <input type="text" class="input" id="assunto" name="assunto" placeholder="Assunto" autocomplete="off" required=""/>
+                <label for="assunto"> <i class="icon icon-info"></i> </label>
+            </span>
+
+            <span>
+                <textarea type="text" class="textarea" id="mensagem" name="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required=""></textarea>
+                <label for="mensagem"> <i class="icon icon-comment"></i> </label>
+            </span>
+
+            <div class="box-pulse">
+                <button type="submit" class="botao-pulse"><i class="icon icon-heart-3"></i> Enviar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div><!--Box Formulario-->  
+
+</body>
+</html>
