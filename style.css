@@ -33,7 +33,11 @@ body {
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
+ }
 
+ nav a:hover {
+    text-decoration: underline;
+    color: #f1f518;
  }
 #banner {
     width: 100;
