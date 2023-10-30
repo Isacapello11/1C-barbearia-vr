@@ -26,6 +26,11 @@ body {
     padding: 20px;
  }
 
+ nav a {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+ }
 #banner {
     width: 100;
 }
